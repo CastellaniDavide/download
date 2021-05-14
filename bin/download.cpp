@@ -1,42 +1,21 @@
-/**
- * @file download.cpp
- *
- * @version 01.01 2021513
- *
- * @brief Download
- *
- * @ingroup download
- * (Note: this needs exactly one @defgroup somewhere)
- *
- * @author Castellani Davide
- *
- * Contact: contacts@castellanidavide.it
- *
- */
-
-// Includes
 #include <bits/stdc++.h>
+#define DEBUG
 using namespace std;
 
-// Variabiles
-int N;
+int T, N, F, C, f, c;
 
-// Main code
-int main()
-{
-  // Cncomment the following lines if you want to read/write from files
-  // freopen("input.txt", "r", stdin);
-  // freopen("output.txt", "w", stdout);
+int main() {
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
 
-  // Input
-  cin >> N;
+    cin >> T;
+    for (size_t t = 0; t < T; ++t) {
+        cin >> N >> F >> C;
 
-  // Code
-  // ...
+        f = N / F;
+        N %= F;
+        c = N / C;
 
-  // Output
-  cout << N << endl;
-
-  // End
-  return 0;
+        cout << "Case #" << t + 1 << ": " << f << " " << c << endl;
+    }
 }
