@@ -5,8 +5,8 @@ using namespace std;
 int T, N, F, C, f, c;
 
 int main() {
-    freopen("input.txt", "r", stdin);
-    freopen("output.txt", "w", stdout);
+    freopen("download_input_1.txt", "r", stdin);
+    freopen("download_output_1.txt", "w", stdout);
 
     cin >> T;
     for (size_t t = 0; t < T; ++t) {
