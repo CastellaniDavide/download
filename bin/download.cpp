@@ -5,7 +5,7 @@ using namespace std;
 int T, N, F, C, f, c;
 
 int main() {
-    freopen("download_input_1.txt", "r", stdin);
+    freopen("download_input_1_aaaa.txt", "r", stdin);
     freopen("download_output_1.txt", "w", stdout);
 
     cin >> T;
